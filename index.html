@@ -3,105 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alaska Plumbing and Heating HVAC | Professional Plumbing Services</title>
+    <title>Jee Jee Building - Professional Plumbing Services in Nigeria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-red: #e63946;
-            --primary-blue: #1d3557;
-            --white: #ffffff;
-            --light-blue: #a8dadc;
+            --primary-red: #E63946;
+            --primary-blue: #1D3557;
+            --white: #FFFFFF;
+            --light-blue: #A8DADC;
+            --light-gray: #F1FAEE;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: var(--white);
+            background-color: var(--light-gray);
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         /* Header Styles */
         header {
-            background-color: var(--primary-blue);
-            color: var(--white);
-            padding: 20px 0;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 15px 0;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
         }
-        
+
         .logo-icon {
-            font-size: 2.5rem;
-            color: var(--primary-red);
-            margin-right: 15px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
         }
-        
+
+        .logo-icon i {
+            color: var(--white);
+            font-size: 24px;
+        }
+
         .logo-text h1 {
-            font-size: 1.8rem;
+            color: var(--primary-blue);
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 5px;
         }
-        
-        .logo-text p {
-            font-size: 0.9rem;
-            opacity: 0.9;
+
+        .logo-text span {
+            color: var(--primary-red);
+            font-size: 14px;
         }
-        
+
         nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         nav ul li {
             margin-left: 30px;
         }
-        
+
         nav ul li a {
-            color: var(--white);
             text-decoration: none;
-            font-weight: 500;
-            font-size: 1.1rem;
+            color: var(--primary-blue);
+            font-weight: 600;
             transition: color 0.3s;
         }
-        
+
         nav ul li a:hover {
             color: var(--primary-red);
         }
-        
-        .mobile-menu-btn {
+
+        .mobile-menu {
             display: none;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 1.5rem;
+            font-size: 24px;
+            color: var(--primary-blue);
             cursor: pointer;
         }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.8)), url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
@@ -111,338 +119,286 @@
             padding: 100px 0;
             text-align: center;
         }
-        
+
         .hero h2 {
-            font-size: 2.5rem;
+            font-size: 48px;
             margin-bottom: 20px;
         }
-        
+
         .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        .btn {
+
+        .cta-button {
             display: inline-block;
             background-color: var(--primary-red);
             color: var(--white);
-            padding: 12px 30px;
+            padding: 15px 30px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 18px;
             transition: background-color 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1.1rem;
         }
-        
-        .btn:hover {
+
+        .cta-button:hover {
             background-color: #c1121f;
         }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--white);
-            margin-left: 15px;
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--white);
-            color: var(--primary-blue);
-        }
-        
+
         /* Services Section */
         .services {
             padding: 80px 0;
             background-color: var(--white);
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .section-title h2 {
-            font-size: 2.2rem;
             color: var(--primary-blue);
+            font-size: 36px;
             margin-bottom: 15px;
         }
-        
+
         .section-title p {
-            font-size: 1.1rem;
             color: #666;
             max-width: 700px;
             margin: 0 auto;
         }
-        
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .service-card {
-            background-color: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: var(--light-gray);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
             transition: transform 0.3s;
         }
-        
+
         .service-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .service-icon {
-            background-color: var(--primary-blue);
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+
+        .service-icon i {
             color: var(--white);
-            font-size: 2.5rem;
-            padding: 30px;
-            text-align: center;
+            font-size: 32px;
         }
-        
-        .service-content {
-            padding: 25px;
-        }
-        
-        .service-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+
+        .service-card h3 {
             color: var(--primary-blue);
+            margin-bottom: 15px;
+            font-size: 22px;
         }
-        
-        .service-content p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
+
         /* About Section */
         .about {
             padding: 80px 0;
-            background-color: #f8f9fa;
+            background-color: var(--light-blue);
         }
-        
-        .about-container {
+
+        .about-content {
             display: flex;
             align-items: center;
             gap: 50px;
         }
-        
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            color: var(--primary-blue);
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
         .about-image {
             flex: 1;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .about-image img {
             width: 100%;
             height: auto;
             display: block;
         }
-        
-        .about-content {
-            flex: 1;
-        }
-        
-        .about-content h2 {
-            font-size: 2.2rem;
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-        }
-        
-        .about-content p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-        
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background-color: var(--white);
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .contact-info h3 {
-            font-size: 1.8rem;
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        
-        .contact-icon {
-            font-size: 1.5rem;
-            color: var(--primary-red);
-            margin-right: 15px;
-            margin-top: 5px;
-        }
-        
-        .contact-text h4 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-            color: var(--primary-blue);
-        }
-        
-        .contact-text p, .contact-text a {
-            color: #666;
-            text-decoration: none;
-        }
-        
-        .contact-text a:hover {
-            color: var(--primary-red);
-        }
-        
-        .contact-form {
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .contact-form h3 {
-            font-size: 1.8rem;
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--primary-blue);
-        }
-        
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        
-        .form-group textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        
-        /* Map Section */
-        .map {
-            height: 400px;
-            background-color: #eee;
-        }
-        
-        .map iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
+
         /* FAQ Section */
         .faq {
             padding: 80px 0;
-            background-color: #f8f9fa;
+            background-color: var(--white);
         }
-        
+
         .faq-item {
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
             overflow: hidden;
         }
-        
+
         .faq-question {
+            padding: 20px;
             background-color: var(--primary-blue);
             color: var(--white);
-            padding: 15px 20px;
-            font-size: 1.2rem;
-            font-weight: 500;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
-        .faq-question:hover {
-            background-color: #14213d;
+
+        .faq-question h3 {
+            font-size: 18px;
         }
-        
+
         .faq-answer {
             padding: 20px;
-            background-color: var(--white);
+            background-color: var(--light-gray);
             display: none;
         }
-        
-        .faq-answer p {
-            color: #666;
-        }
-        
-        .faq-item.active .faq-answer {
+
+        .faq-answer.active {
             display: block;
         }
-        
-        /* Call to Action */
-        .cta {
+
+        /* Contact Section */
+        .contact {
             padding: 80px 0;
-            background-color: var(--primary-red);
-            color: var(--white);
-            text-align: center;
+            background-color: var(--light-blue);
         }
-        
-        .cta h2 {
-            font-size: 2.5rem;
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .contact-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+
+        .contact-icon i {
+            color: var(--white);
+            font-size: 24px;
+        }
+
+        .contact-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
             margin-bottom: 20px;
         }
-        
-        .cta p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-blue);
+            font-weight: 600;
         }
-        
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: var(--primary-red);
+            color: var(--white);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #c1121f;
+        }
+
         /* Footer */
         footer {
             background-color: var(--primary-blue);
             color: var(--white);
             padding: 50px 0 20px;
         }
-        
-        .footer-container {
+
+        .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin-bottom: 40px;
         }
-        
-        .footer-col h3 {
-            font-size: 1.5rem;
+
+        .footer-column h3 {
+            font-size: 20px;
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
         }
-        
-        .footer-col h3::after {
+
+        .footer-column h3::after {
             content: '';
             position: absolute;
             left: 0;
@@ -451,127 +407,119 @@
             height: 2px;
             background-color: var(--primary-red);
         }
-        
-        .footer-col p {
+
+        .footer-column p {
             margin-bottom: 15px;
-            opacity: 0.8;
         }
-        
-        .footer-links li {
-            margin-bottom: 10px;
+
+        .footer-column ul {
             list-style: none;
         }
-        
-        .footer-links a {
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
             color: var(--white);
             text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s;
+            transition: color 0.3s;
         }
-        
-        .footer-links a:hover {
-            opacity: 1;
+
+        .footer-column ul li a:hover {
+            color: var(--primary-red);
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
             width: 40px;
             height: 40px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: var(--white);
-            font-size: 1.2rem;
             transition: background-color 0.3s;
         }
-        
+
         .social-links a:hover {
             background-color: var(--primary-red);
         }
-        
-        .footer-bottom {
+
+        .copyright {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        .footer-bottom p {
-            opacity: 0.7;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
+
+        /* Responsive Styles */
         @media (max-width: 992px) {
-            .about-container {
+            .about-content {
                 flex-direction: column;
             }
             
-            .about-image, .about-content {
-                flex: none;
-                width: 100%;
+            .about-image {
+                order: -1;
             }
         }
-        
+
         @media (max-width: 768px) {
             .header-container {
-                flex-direction: column;
-                text-align: center;
+                padding: 15px;
             }
             
-            .logo {
-                margin-bottom: 20px;
-                justify-content: center;
+            nav {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--white);
+                transition: left 0.3s;
+            }
+            
+            nav.active {
+                left: 0;
             }
             
             nav ul {
                 flex-direction: column;
-                align-items: center;
+                padding: 20px;
             }
             
             nav ul li {
-                margin: 10px 0;
+                margin: 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
             }
             
             .hero h2 {
-                font-size: 2rem;
+                font-size: 36px;
             }
             
             .hero p {
-                font-size: 1rem;
+                font-size: 18px;
             }
-            
-            .btn {
-                display: block;
-                width: 100%;
-                margin-bottom: 10px;
-            }
-            
-            .btn-outline {
-                margin-left: 0;
+        }
+
+        @media (max-width: 576px) {
+            .hero h2 {
+                font-size: 30px;
             }
             
             .section-title h2 {
-                font-size: 1.8rem;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero {
-                padding: 60px 0;
+                font-size: 30px;
             }
             
-            .services, .about, .contact, .faq, .cta {
-                padding: 60px 0;
-            }
-            
-            .service-card {
-                max-width: 100%;
+            .contact-form {
+                padding: 20px;
             }
         }
     </style>
@@ -585,32 +533,31 @@
                     <i class="fas fa-tools"></i>
                 </div>
                 <div class="logo-text">
-                    <h1>Alaska Plumbing and Heating HVAC</h1>
-                    <p>24/7 Emergency Services</p>
+                    <h1>Jee Jee Building</h1>
+                    <span>Professional Plumbing Services</span>
                 </div>
             </div>
-            <nav>
+            <nav id="mainNav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn">
+            <div class="mobile-menu" id="mobileMenu">
                 <i class="fas fa-bars"></i>
-            </button>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h2>Professional Plumbing & Heating Services in Alaska</h2>
-            <p>24/7 emergency services with fast response times. Licensed, insured, and committed to quality workmanship.</p>
-            <a href="tel:+19072096648" class="btn">Call Now: (907) 209-6648</a>
-            <a href="#contact" class="btn btn-outline">Book a Service</a>
+            <h2>Reliable Plumbing Services in Nigeria</h2>
+            <p>24/7 emergency plumbing services for residential and commercial properties. Fast response, quality workmanship, and affordable prices.</p>
+            <a href="tel:+2347051875066" class="cta-button">Call Now: +234 705 187 5066</a>
         </div>
     </section>
 
@@ -619,68 +566,50 @@
         <div class="container">
             <div class="section-title">
                 <h2>Our Services</h2>
-                <p>We offer a wide range of plumbing and heating services to meet all your needs.</p>
+                <p>We offer a wide range of plumbing services to meet all your needs</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-faucet"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>Plumbing Repairs</h3>
-                        <p>From leaky faucets to burst pipes, we handle all plumbing emergencies with expertise.</p>
-                        <a href="#contact" class="btn">Book Now</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Heating Systems</h3>
-                        <p>Installation, repair, and maintenance of all types of heating systems for your home.</p>
-                        <a href="#contact" class="btn">Book Now</a>
-                    </div>
+                    <h3>Leak Repairs</h3>
+                    <p>Professional detection and repair of all types of leaks in your plumbing system.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-toilet"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>Drain Cleaning</h3>
-                        <p>Professional drain cleaning services to prevent clogs and keep your pipes flowing.</p>
-                        <a href="#contact" class="btn">Book Now</a>
+                    <h3>Toilet Repairs</h3>
+                    <p>Fixing running toilets, clogs, and other toilet-related issues efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shower"></i>
                     </div>
+                    <h3>Bathroom Plumbing</h3>
+                    <p>Installation and repair of sinks, showers, bathtubs, and all bathroom fixtures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Water Heater Services</h3>
+                    <p>Installation, repair, and maintenance of all types of water heaters.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-water"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>Water Heaters</h3>
-                        <p>Installation and repair of traditional and tankless water heaters for your home.</p>
-                        <a href="#contact" class="btn">Book Now</a>
-                    </div>
+                    <h3>Drain Cleaning</h3>
+                    <p>Professional drain cleaning services to remove clogs and prevent future blockages.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-home"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>HVAC Services</h3>
-                        <p>Comprehensive heating, ventilation, and air conditioning services for year-round comfort.</p>
-                        <a href="#contact" class="btn">Book Now</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-truck-pickup"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Emergency Services</h3>
-                        <p>24/7 emergency plumbing and heating services when you need them most.</p>
-                        <a href="tel:+19072096648" class="btn">Call Now</a>
-                    </div>
+                    <h3>Pipe Installation</h3>
+                    <p>Expert installation of new pipes and replacement of old or damaged piping systems.</p>
                 </div>
             </div>
         </div>
@@ -688,16 +617,75 @@
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="container about-container">
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Alaska Plumbing and Heating HVAC Team">
-            </div>
+        <div class="container">
             <div class="about-content">
-                <h2>About Our Company</h2>
-                <p>Alaska Plumbing and Heating HVAC has been serving the community for over 15 years with reliable, professional plumbing and heating services.</p>
-                <p>Our team of licensed technicians is committed to providing top-quality workmanship and exceptional customer service. We understand the unique challenges of plumbing and heating in Alaska's climate and are equipped to handle any situation.</p>
-                <p>We pride ourselves on our honesty, integrity, and commitment to solving your plumbing and heating problems efficiently and affordably.</p>
-                <a href="#contact" class="btn">Contact Us Today</a>
+                <div class="about-text">
+                    <h2>About Jee Jee Building</h2>
+                    <p>Jee Jee Building is a professional plumbing service provider based in Nigeria, dedicated to delivering high-quality plumbing solutions to both residential and commercial clients.</p>
+                    <p>With years of experience in the industry, our team of licensed plumbers is committed to providing reliable, efficient, and affordable plumbing services.</p>
+                    <p>We take pride in our workmanship and customer service, ensuring that every job is completed to the highest standards.</p>
+                    <a href="#contact" class="cta-button">Contact Us Today</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Plumber at work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our plumbing services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What areas do you serve?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide plumbing services throughout Nigeria, with a focus on [your city/region]. Contact us to confirm if we service your specific area.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer emergency services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer 24/7 emergency plumbing services. Call us anytime at +234 705 187 5066 for immediate assistance with plumbing emergencies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can you respond to a service call?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For emergency calls, we typically respond within 1-2 hours. For non-emergency service requests, we schedule appointments at your convenience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept cash, bank transfers, and major credit cards. Payment is due upon completion of the work unless other arrangements have been made.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your plumbers licensed and insured?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our plumbers are fully licensed and insured. We carry liability insurance to protect both our team and your property.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -707,176 +695,69 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact Us</h2>
-                <p>Get in touch with us for all your plumbing and heating needs.</p>
+                <p>Get in touch with our team for all your plumbing needs</p>
             </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Serving all of Alaska</p>
-                        </div>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p><a href="tel:+19072096648">(907) 209-6648</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@alaskaplumbinghvac.com">info@alaskaplumbinghvac.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Hours</h4>
-                            <p>24/7 Emergency Services</p>
-                            <p>Monday-Friday: 8am-6pm</p>
-                            <p>Saturday: 9am-4pm</p>
-                        </div>
-                    </div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+2347051875066">+234 705 187 5066</a></p>
+                    <p>24/7 Emergency Service</p>
                 </div>
-                <div class="contact-form">
-                    <h3>Service Booking Form</h3>
-                    <form id="bookingForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a Service</option>
-                                <option value="Plumbing Repair">Plumbing Repair</option>
-                                <option value="Heating System">Heating System</option>
-                                <option value="Drain Cleaning">Drain Cleaning</option>
-                                <option value="Water Heater">Water Heater</option>
-                                <option value="HVAC Service">HVAC Service</option>
-                                <option value="Emergency Service">Emergency Service</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Book Service</button>
-                    </form>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@jeejeebuilding.com">info@jeejeebuilding.com</a></p>
+                    <p>Response within 24 hours</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Nigeria</p>
+                    <p>Serving residential and commercial clients</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map">
-        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-105.278114%2C57.5209446%2C-105.078114%2C57.7209446&amp;layer=mapnik&amp;marker=57.6209446%2C-105.178114" allowfullscreen></iframe>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-                <p>Find answers to common questions about our plumbing and heating services.</p>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <input type="text" id="service" name="service">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
             </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What areas do you serve?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We serve all of Alaska with a focus on the surrounding areas of our location. Contact us to confirm service availability in your specific area.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Are you licensed and insured?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, all our technicians are fully licensed and insured. We meet all Alaska state requirements for plumbing and HVAC services.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Do you offer emergency services?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we offer 24/7 emergency plumbing and heating services. Just call our emergency line at (907) 209-6648 at any time.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What payment methods do you accept?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We accept all major credit cards, checks, and cash. We also offer financing options for larger projects - ask us for details.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How quickly can you respond to service calls?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>For emergency calls, we typically respond within 2 hours. For non-emergency service calls, we schedule appointments within 24-48 hours.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Do you offer maintenance plans?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we offer affordable maintenance plans for both plumbing and HVAC systems to help prevent costly repairs and extend the life of your systems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Need Plumbing or Heating Help?</h2>
-            <p>Don't wait until it's too late. Contact us today for professional, reliable service you can trust.</p>
-            <a href="tel:+19072096648" class="btn">Call Now: (907) 209-6648</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Alaska Plumbing and Heating HVAC</h3>
-                    <p>Your trusted partner for all plumbing and heating needs in Alaska. Quality service you can rely on.</p>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jee Jee Building</h3>
+                    <p>Professional plumbing services you can trust. We're committed to quality workmanship and excellent customer service.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -884,82 +765,105 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
+                <div class="footer-column">
                     <h3>Quick Links</h3>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-column">
                     <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Plumbing Repairs</a></li>
-                        <li><a href="#">Heating Systems</a></li>
+                    <ul>
+                        <li><a href="#">Leak Repairs</a></li>
+                        <li><a href="#">Toilet Repairs</a></li>
+                        <li><a href="#">Bathroom Plumbing</a></li>
+                        <li><a href="#">Water Heater Services</a></li>
                         <li><a href="#">Drain Cleaning</a></li>
-                        <li><a href="#">Water Heaters</a></li>
-                        <li><a href="#">HVAC Services</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-column">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Serving all of Alaska</p>
-                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+19072096648">(907) 209-6648</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@alaskaplumbinghvac.com">info@alaskaplumbinghvac.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> +234 705 187 5066</p>
+                    <p><i class="fas fa-envelope"></i> info@jeejeebuilding.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nigeria</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Alaska Plumbing and Heating HVAC. All Rights Reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2023 Jee Jee Building. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
         // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const nav = document.querySelector('nav ul');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.classList.toggle('show');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenu.innerHTML = mainNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
-        
+
         // FAQ Accordion
         const faqQuestions = document.querySelectorAll('.faq-question');
         
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
-                const item = question.parentNode;
-                item.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
                 
-                // Close other open items
-                faqQuestions.forEach(q => {
-                    if (q !== question) {
-                        q.parentNode.classList.remove('active');
+                // Toggle current answer
+                answer.classList.toggle('active');
+                icon.className = answer.classList.contains('active') ? 
+                    'fas fa-chevron-up' : 'fas fa-chevron-down';
+                
+                // Close other answers
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.nextElementSibling.classList.remove('active');
+                        otherQuestion.querySelector('i').className = 'fas fa-chevron-down';
                     }
                 });
             });
         });
-        
+
         // Form Submission
-        const bookingForm = document.getElementById('bookingForm');
+        const contactForm = document.getElementById('contactForm');
         
-        bookingForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thank you for your service request! We will contact you shortly to confirm your appointment.');
-            bookingForm.reset();
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert('Thank you for your message! We will contact you soon.');
+            contactForm.reset();
         });
-        
+
         // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                        mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
             });
         });
     </script>
